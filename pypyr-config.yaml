@@ -1,0 +1,2 @@
+package_name: arbpackage
+version_module_name: 'arbpackage.version'
