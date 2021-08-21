@@ -1,2 +1,0 @@
-# pyinvoke-comparison-example
-

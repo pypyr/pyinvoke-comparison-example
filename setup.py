@@ -16,7 +16,7 @@ import arbpackage.version
 here = path.abspath(path.dirname(__file__))
 
 # Get the long description from the README file
-with open(path.join(here, 'README.md'), encoding='utf-8') as f:
+with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
@@ -29,7 +29,7 @@ setup(
 
     description=('short description for arbpackage.'),
     long_description=long_description,
-    long_description_content_type='text/markdown',
+    long_description_content_type='text/x-rst',
 
     # The project's main homepage.
     url='https://homepage.arb',
@@ -68,15 +68,18 @@ setup(
         # that you indicate whether you support Python 2, Python 3 or both.
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7'
+        'Programming Language :: Python :: 3.8'
+        'Programming Language :: Python :: 3.8'
+        'Programming Language :: Python :: 3.9'
     ],
 
     # What does your project relate to?
-    keywords='arb,keyword',
+    keywords='arb,keyword,pypyr,invoke',
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
     # packages=find_packages(exclude=['contrib', 'docs', 'tests']),
-    packages=find_packages(exclude=['tests']),
+    packages=find_packages(exclude=['tests', 'ops_invoke']),
 
     # Alternatively, if you want to distribute just a my_module.py, uncomment
     # this:
@@ -98,6 +101,7 @@ setup(
             'codecov',
             'flake8',
             'flake8-docstrings',
+            'invoke',
             'pypyr',
             'pytest',
             'pytest-cov',
