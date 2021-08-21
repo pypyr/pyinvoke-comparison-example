@@ -103,7 +103,4 @@ Using invoke
 ============
 See `ops_invoke/README.rst` for description, how to do these things when implemented by `invoke_`
 
-
-
-
-
+The document also compares pypyr and invoke implementation.

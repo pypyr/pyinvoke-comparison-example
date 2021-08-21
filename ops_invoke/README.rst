@@ -210,3 +210,22 @@ The idea was to replace `@task(klass=MyTask)` by easier to use `@mytask`.
 However, it turns out that the `invoke.task` decorator is not easy to decorate or to use with `functools.partial`.
 
 
+Comparison of pypyr to invoke
+=============================
+Comparing amount of code:
+
+- pypyr ops/*.yml files: 259 lines
+- tasks.py + ops_invoke/*.py + invoke.yml: 399 lines.
+
+If I would try to have less lines, it seems feasible to get the invoke part down to 300 lines
+This makes pypyr 259 lines rewritten to invoke 300 lines what seems a bit more, but still pretty close.
+
+Lessons learned:
+
+- pypyr turns to be a bit more succinct comparing to invoke code.
+- some people might prefer coding in python as this does not require to learn any new (pypyr) syntax
+- invoke solution allows more granular set of actions to call and is quite self-explanatory
+- learning invoke in depth also requires some time
+- invoke required some customization to report called tasks and steps and their results in more readable way
+- the most daunting task is to design actual actions to do for build, tests and other actions and this applies to both pypyr and invoke implementation.
+- pypyr surprised me by wide range of constructs usable for given purpose. First impression was it is not so easy to read but after this exercise I like the pypyr syntax more
