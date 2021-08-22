@@ -86,6 +86,7 @@ Print current version (using some python tricks).
 
   # (if running locally, make sure local branch has latest tags from origin
   $ git pull --tags
+
 Then continue::
 
   # check, if the tag already exists
