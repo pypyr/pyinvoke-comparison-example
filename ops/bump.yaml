@@ -22,7 +22,7 @@ steps:
   - name: pypyr.steps.cmd
     description: --> bumping version
     in:
-      cmd: bumpversion --no-tag  --commit {argString}
+      cmd: bumpversion --tag  --commit {argString}
   - name: pypyr.steps.cmd
     description: --> push bump
     in:
