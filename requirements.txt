@@ -1,0 +1,2 @@
+# this package is so simple, it does not have any dependencies
+# If you need some, put it here following requirements.txt format incl. conditional selectors.

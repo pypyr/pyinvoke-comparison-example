@@ -1,0 +1,11 @@
+bumpversion
+codecov
+flake8
+flake8-docstrings
+invoke
+pypyr
+pytest
+pytest-cov
+setuptools
+twine
+wheel
